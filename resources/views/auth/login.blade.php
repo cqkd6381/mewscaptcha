@@ -39,6 +39,24 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="captcha-input" class="col-md-4 control-label">验证码</label>
+
+                            <div class="col-md-6">
+                                <input type="text" name="captcha" class="form-control" id="captcha-input" required>
+                                <a id="refresh-captcha" onclick="re_captcha()">
+                                    <img src="{{captcha_src()}}" 
+                                        alt="验证码" 
+                                        title="刷新图片" 
+                                        width="160" 
+                                        height="46" 
+                                        id="captcha" 
+                                        border="0" 
+                                        data-captcha-config="default" >
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
